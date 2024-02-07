@@ -26,7 +26,7 @@ export default function App() {
 
     setMessages([...messages, prompt]);
 
-    await fetch("http://localhost:8080/query", {
+    await fetch("http://127.0.0.1:8000/query/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,7 +37,7 @@ export default function App() {
     })
       .then((data) => data.json())
       .then((data) => {
-        const res = data.choices[0].message.content;
+        const res = data.message;
         setMessages((messages) => [
           ...messages,
           {

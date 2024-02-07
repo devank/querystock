@@ -6,4 +6,6 @@
 
 **QueryStock** is a genAI chat-bot where you can query about NIFTY-50 stock price details from 2000 to 2021.
 
+Stock Data Source: https://www.kaggle.com/datasets/rohanrao/nifty50-stock-market-data/data 
+
 
